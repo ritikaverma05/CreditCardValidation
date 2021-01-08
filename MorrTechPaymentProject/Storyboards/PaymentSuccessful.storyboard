@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment Successful View Controller-->
+        <scene sceneID="3Vl-uD-TTo">
+            <objects>
+                <viewController storyboardIdentifier="PaymentSuccessfulViewController" id="Bwy-5d-6ar" customClass="PaymentSuccessfulViewController" customModule="MorrTechPaymentProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GMD-Uu-wUN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-Nr-y9C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBt-bB-H2q">
+                                        <rect key="frame" x="25" y="300" width="364" height="120"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3Y-Sa-PWa">
+                                                <rect key="frame" x="20" y="5" width="324" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="688-2i-T2n"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-k8-kh9">
+                                                <rect key="frame" x="284" y="60" width="50" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="mei-JY-TIl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                                <state key="normal" title="OK">
+                                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CloseBtn:" destination="Bwy-5d-6ar" eventType="touchUpInside" id="sPJ-Ts-DbU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="q3Y-Sa-PWa" firstAttribute="top" secondItem="sBt-bB-H2q" secondAttribute="top" constant="5" id="0j9-MZ-FXH"/>
+                                            <constraint firstAttribute="trailing" secondItem="LeN-k8-kh9" secondAttribute="trailing" constant="30" id="7K6-nI-3bG"/>
+                                            <constraint firstItem="LeN-k8-kh9" firstAttribute="top" secondItem="q3Y-Sa-PWa" secondAttribute="bottom" constant="5" id="EK2-ge-R4O"/>
+                                            <constraint firstAttribute="trailing" secondItem="q3Y-Sa-PWa" secondAttribute="trailing" constant="20" id="e40-tV-54p"/>
+                                            <constraint firstItem="q3Y-Sa-PWa" firstAttribute="leading" secondItem="sBt-bB-H2q" secondAttribute="leading" constant="20" id="gQN-lJ-Sm9"/>
+                                            <constraint firstAttribute="height" constant="120" id="h2J-DF-XdT"/>
+                                            <constraint firstAttribute="bottom" secondItem="LeN-k8-kh9" secondAttribute="bottom" constant="23" id="wFR-X3-v6C"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBound" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="sBt-bB-H2q" firstAttribute="leading" secondItem="xGP-Nr-y9C" secondAttribute="leading" constant="25" id="BeD-AD-I3I"/>
+                                    <constraint firstAttribute="trailing" secondItem="sBt-bB-H2q" secondAttribute="trailing" constant="25" id="Nte-TS-zfn"/>
+                                    <constraint firstItem="sBt-bB-H2q" firstAttribute="top" secondItem="xGP-Nr-y9C" secondAttribute="top" constant="300" id="xcX-9K-1Iq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D7Z-K7-3uC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xGP-Nr-y9C" secondAttribute="bottom" id="7lm-yi-yv6"/>
+                            <constraint firstItem="xGP-Nr-y9C" firstAttribute="leading" secondItem="GMD-Uu-wUN" secondAttribute="leading" id="T2S-Sh-JZH"/>
+                            <constraint firstAttribute="trailing" secondItem="xGP-Nr-y9C" secondAttribute="trailing" id="c4M-WH-Lu1"/>
+                            <constraint firstItem="xGP-Nr-y9C" firstAttribute="top" secondItem="GMD-Uu-wUN" secondAttribute="top" id="znT-Fb-a5P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="xGP-Nr-y9C" id="0Xk-cI-vHZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5i-w8-Zfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1081.1594202898552" y="159.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
